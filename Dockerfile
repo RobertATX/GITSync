@@ -8,6 +8,6 @@ RUN mkdir /code
 VOLUME ["/git"]
 
 #Setup?
-#ENV GIT_SYNC_DEST /git
+ENV GIT_SYNC_DEST /git
 
-#ENTRYPOINT ["/bin/gitsync"]
+ENTRYPOINT ["/bin/gitsync"]
